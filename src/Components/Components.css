@@ -1,0 +1,397 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: palevioletred; 
+    text-align: center;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    padding-right: 800px;
+}
+
+a{
+   
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries*/
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 30px;
+        padding-right: 400px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 24px;
+        padding-right: 100px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+    
+    .login-btn, .logout-btn {
+        width: 70px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding-right: 0;
+    }
+
+    a {
+        font-size: 16px;
+    }
+    
+    .login-btn, .logout-btn {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+
+/* Login Button */
+.login-btn {
+    width: 80px; 
+    height: 40px; 
+    border-radius: 25px; 
+    border: 1px solid gray; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Logout Button */
+.logout-btn {
+    width: 80px; 
+    height: 40px; 
+    border-radius: 25px; 
+    border: 1px solid gray; 
+    font-size: 17px; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Media Queries*/
+@media screen and (max-width: 768px) {
+    .login-btn,
+    .logout-btn {
+        width: 80px; 
+        height: 50px; 
+        font-size: 20px; 
+        margin: 10px 0; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .login-btn,
+    .logout-btn {
+        width: 100%; 
+        height: 60px; 
+        font-size: 22px; 
+        margin: 12px 0; 
+    }
+}
+
+/* About */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #343a40;
+}
+
+hr {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.h1-1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-bottom: 1px solid #e0e0e0;
+    width: 90%;
+    height: 380px;
+}
+
+.card-body {
+    padding: 15px;
+    width: 485px;
+    height: 50px;
+   
+   
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #495057;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.px-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+}
+
+/* Media Queries*/
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Signup/Login Form */
+.loginsignup{
+    width: 100%;
+    height: 90vh;
+    background: #fce3fe;
+    padding-top: 50px;
+}
+
+.loginsignup-container{
+    width: 400px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    padding: 10px 20px;
+} 
+
+ .loginsignup-container h1{
+    margin: 3px 0px;
+}
+
+.loginsignup-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+
+.loginsignup-fields input{
+    height: 50px;
+    width: 350px;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.loginsignup-container button{
+    width: 350px;
+    height: 50px;
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+}
+
+.loginsignup-login{
+    margin-top: 10px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.loginsignup-login span{
+    color: #ff4141;
+    font-weight: 600;
+}
+
+.loginsignup-agree{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 400;
+} 
+
+/* Media Queries*/
+@media screen and (max-width: 768px) {
+    .loginsignup {
+      padding: 20px; 
+    }
+  
+    .loginsignup-container {
+      width: 90%; 
+      height: auto; 
+      padding: 15px; 
+    }
+  
+    .loginsignup-fields input {
+      width: 100%;
+    }
+  
+    .loginsignup-container h1 {
+      font-size: 28px; 
+    }
+  
+    .loginsignup-container button {
+      width: 100%; 
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .loginsignup {
+      padding: 10px; 
+    }
+  
+    .loginsignup-container {
+      width: 100%; 
+    }
+  
+    .loginsignup-container h1 {
+      font-size: 24px; 
+    }
+  
+    .loginsignup-fields input {
+      font-size: 16px; 
+    }
+  
+    .loginsignup-agree {
+      flex-direction: column; 
+      align-items: flex-start; 
+    }
+  
+    .loginsignup-agree input {
+      margin-bottom: 10px; 
+    }
+  }
+  
